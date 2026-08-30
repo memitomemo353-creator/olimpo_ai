@@ -25,6 +25,9 @@ jobs:
           flutter-version: '3.19.6'
           channel: 'stable'
 
+      - name: Inicializar Proyecto Flutter (Archivos Android)
+        run: flutter create . --org com.olimpo.ai --project-name olimpo_ai --platforms android
+
       - name: Instalar Dependencias
         run: flutter pub get
 
